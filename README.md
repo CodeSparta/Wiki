@@ -670,6 +670,11 @@ oc get route -n openshift-console console | awk '/console/{print $2}' or oc whoa
 
 1. In order to access the web console, we will need to connect to the private VPC. One way to do this is to simply use sshuttle ([https://sshuttle.readthedocs.io/en/stable/overview.html](https://sshuttle.readthedocs.io/en/stable/overview.html)) using the following commands.
 
+a. `rpm -qa sshuttle`
+b. if not install run the following command to enable the epel repository in order to be able to install the sshuttle package on RHEL
+   `sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm` then
+   `sudo yum install -y sshuttle`
+
 From the ICLT host, run the following command to install Python 3.6 on the Sparta Bastion Node to support using sshuttle
 
 
