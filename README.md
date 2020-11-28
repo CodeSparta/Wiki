@@ -672,7 +672,7 @@ oc get route -n openshift-console console | awk '/console/{print $2}' or oc whoa
 
 a. `rpm -qa sshuttle`
 
-b. if not install run the following command to enable the epel repository in order to be able to install the sshuttle package on RHEL
+b. if not already installed run the below commands to enable the epel repository in order to be able to install the sshuttle package on RHEL
    `sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm` then
    `sudo yum install -y sshuttle`
 
