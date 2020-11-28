@@ -653,6 +653,13 @@ subjects:
 
 ```
 
+1b. Add the `cluster-admin` role to the newly created user.
+
+```
+oc adm policy add-cluster-role-to-user cluster-admin admin
+
+```
+
 
 1. To get the url to the console:
 
